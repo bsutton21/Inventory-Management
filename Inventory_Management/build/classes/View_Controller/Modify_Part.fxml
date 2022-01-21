@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" style="-fx-background-color: gainsboro;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.Modify_PartController">
+   <children>
+      <Text fill="#2c3279" layoutX="14.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modify Part">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <RadioButton fx:id="inhouseradiomodify" layoutX="123.0" layoutY="17.0" mnemonicParsing="false" onMouseClicked="#modifyRadioInHouse" text="In-House" />
+      <RadioButton fx:id="outsourceradiomodify" layoutX="230.0" layoutY="17.0" mnemonicParsing="false" onMouseClicked="#modifyRadioOutSourced" text="Outsourced" />
+      <Text layoutX="52.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID" />
+      <Text layoutX="52.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" />
+      <Text layoutX="52.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inv" />
+      <Text layoutX="52.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price/Cost" />
+      <Text layoutX="52.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Min" />
+      <Text fx:id="companynamemodify" layoutX="52.0" layoutY="309.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <TextField fx:id="idfieldmodify" editable="false" layoutX="152.0" layoutY="69.0" />
+      <TextField fx:id="namefieldmodify" layoutX="152.0" layoutY="113.0" />
+      <TextField fx:id="invfieldmodify" layoutX="152.0" layoutY="161.0" />
+      <TextField fx:id="pricefieldmodify" layoutX="152.0" layoutY="206.0" />
+      <TextField fx:id="minfieldmodify" layoutX="152.0" layoutY="249.0" prefHeight="25.0" prefWidth="85.0" />
+      <TextField fx:id="maxfieldmodify" layoutX="290.0" layoutY="249.0" prefHeight="25.0" prefWidth="85.0" />
+      <TextField fx:id="companynamefieldmodify" layoutX="152.0" layoutY="292.0" />
+      <Text layoutX="251.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Max" />
+      <Button fx:id="cancelbuttonmodify" layoutX="293.0" layoutY="346.0" mnemonicParsing="false" onMouseClicked="#cancelButton" prefHeight="30.0" prefWidth="80.0" text="Cancel" />
+      <Button fx:id="savebuttonmodify" layoutX="197.0" layoutY="346.0" mnemonicParsing="false" onMouseClicked="#saveButton" prefHeight="30.0" prefWidth="80.0" text="Save" />
+   </children>
+</AnchorPane>
